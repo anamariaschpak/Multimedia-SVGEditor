@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ANA's SVG Editor</title>
+    <link rel="stylesheet" href="6_1090_SCHPAK_ANA_MARIA.css" />
+    <script src="6_1090_SCHPAK_ANA_MARIA.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script>
+      var sound = new Audio();
+      sound.src = "media/Water_Balloon.mp3";
+    </script>
+
+    <!-- Didn't add these into .css file because I will delete them later on. -->
+    <style></style>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <!-- Would it be better to include the <svg> into an <img> ? Answer: no -->
+      <svg
+        id="svgContainer"
+        width="900"
+        height="600"
+        viewBox="0 0 900 600"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:svg="http://www.w3.org/2000/svg"
+      >
+        <filter id="blur">
+          <feGaussianBlur stdDeviation="2" />
+        </filter>
+        <filter id="hueRotate">
+          <feColorMatrix type="hueRotate" values="180" />
+        </filter>
+        <filter id="saturate">
+          <feColorMatrix type="saturate" values="0.10" />
+        </filter>
+      </svg>
+
+      <div id="buttonsContainer">
+        <button title="Select" id="btnCursor" onclick="sound.play()">
+          <img src="media/cursor.png" />
+        </button>
+        <button title="Draw a Line" id="btnLine" onclick="sound.play()">
+          <img src="media/marker-pen.png" />
+        </button>
+        <button title="Draw an Ellipse" id="btnEllipse" onclick="sound.play()">
+          <img src="media/filled-circle.png" />
+        </button>
+        <button title="Draw a Rectangle" id="btnRect" onclick="sound.play()">
+          <img src="media/rectangle.png" />
+        </button>
+        <button title="Add Text" id="btnAddText" onclick="sound.play()">
+          <img src="media/text.png" />
+        </button>
+        <button title="Make bigger" id="btnBigger" onclick="sound.play()">
+          <img src="media/arrow-double-up.png" />
+        </button>
+        <button title="Make smaller" id="btnSmaller" onclick="sound.play()">
+          <img src="media/arrow-double-down.png" />
+        </button>
+        <button id="btnBlur" onclick="sound.play()">Blur</button>
+        <button id="btnHueRotate" onclick="sound.play()">Hue rotate</button>
+        <button id="btnSaturate" onclick="sound.play()">Gray-scale</button>
+      </div>
+    </div>
+  </body>
+</html>

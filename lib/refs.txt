@@ -1,0 +1,9 @@
+1. https://www.w3schools.com/css/css3_buttons.asp
+2. https://www.w3.org/TR/SVG2/
+3. https://stackoverflow.com/questions/12786797/draw-rectangles-dynamically-in-svg
+4. https://developer.mozilla.org/en-US/docs/Web/SVG
+5. https://stackoverflow.com/questions/22894540/creating-circles-with-svg-and-javascript
+6. https://stackoverflow.com/questions/4176146/svg-based-text-input-field
+7. https://developer.mozilla.org/en-US/docs/Web/SVG/Element/text
+8. https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent
+9. https://stackoverflow.com/questions/9308938/inline-text-editing-in-svg
